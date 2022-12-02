@@ -1,2 +1,15 @@
-# **Pembuatan dokumentasi sederhana untuk rancangan request API service yang memuat permintaan CRUD atau method POST,GET,PUT dan DELETE**
+# Agenda Mahasiswa Ilmu Komputer
+##
 
+## Data Mahasiswa Ilmu Komputer
+<details>
+<summary> Klik untuk Ekspan </summary>
+
+### Create Mahasiswa
+<table>
+<tr>
+    <td> <b> URL</b> </td>
+    <td> </td>
+</tr>
+</table>
+</details>
