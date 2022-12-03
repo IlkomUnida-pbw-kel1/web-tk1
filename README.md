@@ -414,3 +414,118 @@
 </td>
 </tr>
 </table>
+
+### Read Dosen By nid
+<table>
+<tr>
+    <td> <b>URL</b> </td>
+    <td> {{baseURL}}/api/v1/dosen </td>
+</tr>
+<tr>
+    <td> <b>Example</b> </td>
+    <td> {{baseURL}}/api/v1/dosen?nid=0010201 </td>
+</tr>
+<tr>
+    <td> <b>Method</b> </td>
+    <td> GET </td>
+</tr>
+<tr>
+    <td> <b>Header</b> </td>
+    <td> Authorization : Bearer Token  </td>
+</tr>
+<tr>
+<td> <b>Query</b> </td>
+<td> nid=0010201 </td>
+</tr>
+<tr>
+<td> <b>Respon Success</b> </td>
+<td>
+
+``` json
+{
+    "code" : 200,
+    "message" : "Sukses",
+    "data" : {
+        "nid" : 0010201,
+        "nama" : "Uus Firdaus",
+        "alamat" : "Gadog",
+        "mapel" : "Basisdata, Struktur Data",
+        "kelas" : "Pagi, Sore"
+    } 
+}    
+```
+
+</td>
+</tr>
+<tr>
+<td> <b>Respon Not Found</b> </td>
+<td>
+
+``` json
+{
+    "code" : 404,
+    "message" : "NID Dosen tidak ditemukan",
+    "data" : {
+        "value" : 0010201,
+        "property" : "nid",
+        "location" : "query"
+    } 
+}    
+```
+
+</td>
+</tr>
+</table>
+
+
+### Read Dosen All
+<table>
+<tr>
+    <td> <b>URL</b> </td>
+    <td> {{baseURL}}/api/v1/dosen </td>
+</tr>
+<tr>
+    <td> <b>Method</b> </td>
+    <td> GET </td>
+</tr>
+<tr>
+    <td> <b>Header</b> </td>
+    <td> Authorization : Bearer Token  </td>
+</tr>
+<tr>
+<td> <b>Respon Success</b> </td>
+<td>
+
+``` json
+{
+    "code" : 200,
+    "message" : "Sukses",
+    "data" : 
+        {
+            "nid" : 0010201,
+            "nama" : "Uus Firdaus",
+            "alamat" : "Gadog",
+            "mapel" : "Basisdata, Struktur Data",
+            "kelas" : "Pagi, Sore"
+        },
+        {
+            "nid" : 0010202,
+            "nama" : "Hilmy Aliy Andra Putra",
+            "alamat" : "Ciapus",
+            "mapel" : "Matematika, Aljabar Linear",
+            "kelas" : "Pagi, Sore"
+        },
+        {
+            "nid" : 0010203,
+            "nama" : "Mash'um Abdul Jabbar",
+            "alamat" : "Megamendung",
+            "mapel" : "OOP, PBW",
+            "kelas" : "Pagi, Sore"
+        }
+    
+}    
+```
+
+</td>
+</tr>
+</table>
