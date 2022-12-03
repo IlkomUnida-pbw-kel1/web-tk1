@@ -1,4 +1,4 @@
-# **Pembuatan dokumentasi sederhana untuk rancangan request API service yang memuat permintaan CRUD atau method POST,GET,PUT dan DELETE**
+# **Pembuatan dokumentasi sederhana rancangan request API untuk service yang memuat permintaan CRUD atau method POST,GET,PUT dan DELETE**
 <details>
 <summary> Klik untuk Ekspan </summary>
      
