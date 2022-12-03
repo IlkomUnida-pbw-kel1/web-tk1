@@ -21,6 +21,7 @@ Berikutnya adalah, perlu diketahui juga **http method** apa yang digunakan untuk
   **3. PUT / PATCH — OK ( 200)**  
   **4. DELETE — NO CONTENT ( 204 )**
 
+Berikut contoh rancangan request API untuk service yang akan dibangun:
 
 ## Agenda Mahasiswa Ilmu Komputer
 
