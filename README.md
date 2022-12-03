@@ -3,7 +3,8 @@
 Berikutnya adalah, perlu diketahui juga http method apa yang digunakan untuk sebuah proses CRUD melalui API. Berikut adalah http method yang biasanya digunakan untuk kebutuhan CRUD dasar.
 1. POST — CREATE  
    Method POST biasa digunakan untuk melakukan request untuk membuat resource baru. Method POST ini biasanya akan diarahkan kepada method create pada Controller.
-3. GET — SHOW / INDEX  
+3. GET — SHOW / INDEX   
+   Method GET biasa digunakan untuk melakukan request untuk mengambil atau menampilkan resource. Resource yang ditampilkan atau diambil bisa hanya satu atau semuanya    yang ada (indexing). Method GET ini akan diarahkan kepada Controller pada bagian method show untuk menampilan sebuah resource atau method index untuk menampilkan banyak resource. 
 
 3. PUT — UPDATE (all)
  
