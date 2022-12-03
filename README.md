@@ -1,14 +1,18 @@
 # **Pembuatan dokumentasi sederhana untuk rancangan request API service yang memuat permintaan CRUD atau method POST,GET,PUT dan DELETE**
 
 Berikutnya adalah, perlu diketahui juga http method apa yang digunakan untuk sebuah proses CRUD melalui API. Berikut adalah http method yang biasanya digunakan untuk kebutuhan CRUD dasar.
-1. POST — CREATE  
+
+**1. POST — CREATE**  
    Method POST biasa digunakan untuk melakukan request untuk membuat resource baru. Method POST ini biasanya akan diarahkan kepada method create pada Controller.
-3. GET — SHOW / INDEX   
+   
+**2. GET — SHOW / INDEX**   
    Method GET biasa digunakan untuk melakukan request untuk mengambil atau menampilkan resource. Resource yang ditampilkan atau diambil bisa hanya satu atau semuanya    yang ada (indexing). Method GET ini akan diarahkan kepada Controller pada bagian method show untuk menampilan sebuah resource atau method index untuk menampilkan banyak resource. 
 
-3. PUT — UPDATE (all)
+**3. PUT — UPDATE (all) ** 
+  Method PUT biasa digunakan untuk melakukan request untuk melakukan perubahan pada semua elemen dari suatu resource, kecuali bagian Id atau primary key dari resource tersebut. Method GET ini akan diarahkan kepada method update pada Controller.
  
-4. DELETE — DESTROY
+**4. DELETE — DESTROY **  
+   Method DELETE biasa digunakan untuk melakukan request untuk menghapus resource. Method DELETE ini biasanya akan diarahkan kepada method destroy pada Controller.
  
 
 ## Agenda Mahasiswa Ilmu Komputer
