@@ -15,7 +15,7 @@ Berikutnya adalah, perlu diketahui juga **http method** apa yang digunakan untuk
 **4. DELETE — DESTROY**  
      Method DELETE biasa digunakan untuk melakukan request untuk menghapus resource. Method DELETE ini biasanya akan diarahkan kepada method destroy pada Controller.
  
-  Selanjutnya, kita akan belajar mengenai **http response** status code atau kode respon yang diberikan oleh API endpoint.Berikut adalah success response status code yang biasa digunakan sesuai dengan http method dalam melakukan request terhadap resource.
+  Selanjutnya, kita akan belajar mengenai **http response** status code atau kode respon yang diberikan oleh API endpoint.Berikut adalah success response status code yang biasa digunakan sesuai dengan http method dalam melakukan request terhadap resource.  
   **1. POST — CREATED ( 201 )**  
   **2. GET — OK ( 200 )**  
   **3. PUT / PATCH — OK ( 200)**  
