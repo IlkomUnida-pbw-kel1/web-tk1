@@ -67,15 +67,15 @@
     "data" : [
     {
         "id"     : 1234,
-        "nama"   : "jafar JS"
-        "alamat" : "Bogor"
-        "hobi"   : "Hikimg"
+        "nama"   : "jafar"
+        "alamat" : "bogor"
+        "hobi"   : "hiking"
     },
     {
     "id" : 1234,
-        "nama"   : "jafar JS"
-        "alamat" : "Bogor"
-        "hobi"   : "Hiking"
+        "nama"   : "jafar"
+        "alamat" : "bogor"
+        "hobi"   : "hiking"
     }
     ]
 }
@@ -90,9 +90,9 @@
     "code" : 409,
     "message" : "Nama Mahasiswa Telah Digunakan",
     "data" : {
-        "nama"   : "Jafar JS"
-        "alamat" : "Bogor"
-        "hobi"   : "Hiking"
+        "nama"   : "jafar"
+        "alamat" : "bogor"
+        "hobi"   : "hiking"
     }
 }
 ```
@@ -117,39 +117,3 @@
 </td>
 </tr>
 </table>
-
-<td> <b>Respon Success</b> </td>
-<td>
-
-``` json
-{
-    "code" : 201,
-    "message" : "Data mahasiswa berhasil diinput",
-    "data" : {
-        "nim" : 2001,
-        "nama" : "Jafar JSi",
-        "alamat" : "Bogor",
-        "hoby" : "Hiking"
-    } 
-}    
-```
-<tr>
-<td> <b>Respon Conflict</b> </td>
-<td>
-
-``` json
-{
-    "code" : 409,
-    "message" : "Nama Mahasiswa telah digunakan",
-    "data" : {
-        "value" : "Jafar JS",
-        "property" : "nama",
-        "location" : "body"
-    } 
-}    
-```
-
-</td>
-</tr>
-</table>
-</details>
