@@ -1,6 +1,6 @@
 # **Pembuatan dokumentasi sederhana untuk rancangan request API service yang memuat permintaan CRUD atau method POST,GET,PUT dan DELETE**
 
-Berikutnya adalah, perlu diketahui juga http method apa yang digunakan untuk sebuah proses CRUD melalui API. Berikut adalah http method yang biasanya digunakan untuk kebutuhan CRUD dasar.
+Berikutnya adalah, perlu diketahui juga **http method** apa yang digunakan untuk sebuah proses CRUD melalui API. Berikut adalah http method yang biasanya digunakan untuk kebutuhan CRUD dasar.
 
 **1. POST — CREATE**  
      Method POST biasa digunakan untuk melakukan request untuk membuat resource baru. Method POST ini biasanya akan diarahkan kepada method create pada Controller.
@@ -15,6 +15,12 @@ Berikutnya adalah, perlu diketahui juga http method apa yang digunakan untuk seb
 **4. DELETE — DESTROY**  
      Method DELETE biasa digunakan untuk melakukan request untuk menghapus resource. Method DELETE ini biasanya akan diarahkan kepada method destroy pada Controller.
  
+  Selanjutnya, kita akan belajar mengenai **http response** status code atau kode respon yang diberikan oleh API endpoint.Berikut adalah success response status code yang biasa digunakan sesuai dengan http method dalam melakukan request terhadap resource.
+  **1. POST — CREATED ( 201 )**
+  **2. GET — OK ( 200 )**
+  **3. PUT / PATCH — OK ( 200)**
+  **4. DELETE — NO CONTENT ( 204 )**
+
 
 ## Agenda Mahasiswa Ilmu Komputer
 
