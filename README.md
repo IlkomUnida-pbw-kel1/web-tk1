@@ -194,3 +194,150 @@
 </tr>
 </table>
 
+### Update Mahasiswa
+<table>
+<tr>
+    <td> <b>URL</b> </td>
+    <td> {{baseURL}}/api/v1/mahasiswa </td>
+</tr>
+<tr>
+    <td> <b>Method</b> </td>
+    <td> PUT </td>
+</tr>
+<tr>
+    <td> <b>Header</b> </td>
+    <td> Authorization : Bearer Token  </td>
+</tr>
+<tr>
+<td> <b>Body</b> </td>
+<td>
+
+``` json
+{
+    "nim" : 2001,
+    "nama" : "Rusdi Abdul Gani",
+    "alamat" : "Ciberem",
+    "hoby" : "Coding"
+}    
+```
+
+</td>
+</tr>
+<tr>
+<td> <b>Respon Success</b> </td>
+<td>
+
+``` json
+{
+    "code" : 201,
+    "message" : "Data Mahasiswa berhasil diubah",
+    "data" : {
+        "nim" : 2001,
+        "nama" : "Rusdi Abdul Gani",
+        "alamat" : "Ciberem",
+        "hoby" : "coding"
+    } 
+}    
+```
+
+</td>
+</tr>
+<tr>
+<td> <b>Respon Conflict</b> </td>
+<td>
+
+``` json
+{
+    "code" : 409,
+    "message" : "Alamat Mahasiswa telah digunakan",
+    "data" : {
+        "value" : "Ciberem",
+        "property" : "alamat",
+        "location" : "body"
+    } 
+}    
+```
+
+</td>
+</tr>
+<tr>
+<td> <b>Respon Not Found</b> </td>
+<td>
+
+``` json
+{
+    "code" : 404,
+    "message" : "NIM Mahasiswa tidak ditemukan",
+    "data" : {
+        "value" : 2001,
+        "property" : "nim",
+        "location" : "body"
+    } 
+}    
+```
+
+</td>
+</tr>
+</table>
+
+### Delete Mahasiswa
+<table>
+<tr>
+    <td> <b>URL</b> </td>
+    <td> {{baseURL}}/api/v1/mahasiswa </td>
+</tr>
+<tr>
+    <td> <b>Example</b> </td>
+    <td> {{baseURL}}/api/v1/mahasiswa?nim=2001 </td>
+</tr>
+<tr>
+    <td> <b>Method</b> </td>
+    <td> DELETE </td>
+</tr>
+<tr>
+    <td> <b>Header</b> </td>
+    <td> Authorization : Bearer Token  </td>
+</tr>
+<tr>
+<td> <b>Query</b> </td>
+<td> nim=2001 </td>
+</tr>
+<tr>
+<td> <b>Respon Success</b> </td>
+<td>
+
+``` json
+{
+    "code" : 200,
+    "message" : "Sukses dihapus",
+    "data" : {
+        "nim" : 2001,
+        "nama" : "Rusdi Abdul Gani",
+        "alamat" : "Ciberem",
+        "hoby" : "Coding"
+    }
+}    
+```
+
+</td>
+</tr>
+<tr>
+<td> <b>Respon Not Found</b> </td>
+<td>
+
+``` json
+{
+    "code" : 404,
+    "message" : "NIM Mahasiswa tidak ditemukan",
+    "data" : {
+        "value" : 2001,
+        "property" : "nim",
+        "location" : "query"
+    } 
+}    
+```
+
+</td>
+</tr>
+</table>
+</details>
