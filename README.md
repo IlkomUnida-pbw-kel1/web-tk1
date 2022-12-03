@@ -341,3 +341,76 @@
 </tr>
 </table>
 </details>
+
+## Data Dosen Ilmu Komputer
+<details>
+<summary> Klik untuk Ekspan </summary>
+
+### Create Dosen
+<table>
+<tr>
+    <td> <b>URL</b> </td>
+    <td> {{baseURL}}/api/v1/dosen </td>
+</tr>
+<tr>
+    <td> <b>Method</b> </td>
+    <td> POST </td>
+</tr>
+<tr>
+    <td> <b>Header</b> </td>
+    <td> Authorization : Bearer Token  </td>
+</tr>
+<tr>
+<td> <b>Body</b> </td>
+<td>
+
+``` json
+{
+    "nama" : "Uus Firdaus",
+    "alamat" : "Gadog",
+    "mapel" : "Basisdata, Struktur Data",
+    "kelas" : "Pagi, Sore"
+}    
+```
+
+</td>
+</tr>
+<tr>
+<td> <b>Respon Success</b> </td>
+<td>
+
+``` json
+{
+    "code" : 201,
+    "message" : "Data Dosen Berhasil diinput",
+    "data" : {
+        "nid" : 0010201,
+        "nama" : "Uus Firdaus",
+        "alamat" : "Gadog",
+        "mapel" : "Basisdata, Struktur Data",
+        "kelas" : "Pagi, Sore"
+    } 
+}    
+```
+
+</td>
+</tr>
+<tr>
+<td> <b>Respon Conflict</b> </td>
+<td>
+
+``` json
+{
+    "code" : 409,
+    "message" : "Nama Dosen Telah digunakan",
+    "data" : {
+        "value" : "Uus Firdaus",
+        "property" : "nama",
+        "location" : "body"
+    } 
+}    
+```
+    
+</td>
+</tr>
+</table>
