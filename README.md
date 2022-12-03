@@ -1,5 +1,7 @@
 # **Pembuatan dokumentasi sederhana untuk rancangan request API service yang memuat permintaan CRUD atau method POST,GET,PUT dan DELETE**
-
+<details>
+<summary> Klik untuk Ekspan </summary>
+     
 Berikutnya adalah, perlu diketahui juga **http method** apa yang digunakan untuk sebuah proses CRUD melalui API. Berikut adalah http method yang biasanya digunakan untuk kebutuhan CRUD dasar.
 
 **1. POST — CREATE**  
@@ -21,6 +23,8 @@ Berikutnya adalah, perlu diketahui juga **http method** apa yang digunakan untuk
   **2. GET — OK ( 200 )**  
   **3. PUT / PATCH — OK ( 200)**  
   **4. DELETE — NO CONTENT ( 204 )**
+
+</details>
 
 Berikut contoh rancangan request API untuk service yang akan dibangun:
 
