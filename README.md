@@ -33,6 +33,43 @@
 </td>
 </tr>
 <tr>
+<td> <b>Respon Success</b> </td>
+<td>
+
+``` json
+{
+    "code" : 201,
+    "message" : "Data Mahasiswa berhasil diinput",
+    "data" : {
+        "nim" : 2001,
+        "nama" : "Rusdi Abdul Gani",
+        "alamat" : "Bogor",
+        "hoby" : "Musik"
+    } 
+}    
+```
+
+</td>
+</tr>
+<tr>
+<td> <b>Respon Conflict</b> </td>
+<td>
+
+``` json
+{
+    "code" : 409,
+    "message" : "Nama Mahasiswa telah digunakan",
+    "data" : {
+        "value" : "Rusdi Abdul Gani",
+        "property" : "nama",
+        "location" : "body"
+    } 
+}    
+```
+
+</td>
+</tr>
+</table>
 
 ### Read Mahasiswa By nim
 <table>
