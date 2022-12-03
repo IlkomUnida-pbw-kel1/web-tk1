@@ -529,3 +529,154 @@
 </td>
 </tr>
 </table>
+
+### Update Dosen
+<table>
+<tr>
+    <td> <b>URL</b> </td>
+    <td> {{baseURL}}/api/v1/dosen </td>
+</tr>
+<tr>
+    <td> <b>Method</b> </td>
+    <td> PUT </td>
+</tr>
+<tr>
+    <td> <b>Header</b> </td>
+    <td> Authorization : Bearer Token  </td>
+</tr>
+<tr>
+<td> <b>Body</b> </td>
+<td>
+
+``` json
+{
+    "nid" : 0010203,
+    "nama" : "Mash'um Abdul Jabbar, M.T.I",
+    "alamat" : "Megamendung",
+    "mapel" : "OOP, PBW",
+    "kelas" : "Pagi, Sore"
+}    
+```
+
+</td>
+</tr>
+<tr>
+<td> <b>Respon Success</b> </td>
+<td>
+
+``` json
+{
+    "code" : 201,
+    "message" : "Data Dosen Berhasil diubah",
+    "data" : {
+        "nid" : 0010203,
+        "nama" : "Mash'um Abdul Jabbar, M.T.I",
+        "alamat" : "Megamendung",
+        "mapel" : "OOP, PBW",
+        "kelas" : "Pagi, Sore"
+    } 
+}    
+```
+
+</td>
+</tr>
+<tr>
+<td> <b>Respon Conflict</b> </td>
+<td>
+
+``` json
+{
+    "code" : 409,
+    "message" : "Nama Dosen Telah digunakan",
+    "data" : {
+        "value" : "Mash'um Abdul Jabbar, M.T.I",
+        "property" : "nama",
+        "location" : "body"
+    } 
+}    
+```
+
+</td>
+</tr>
+<tr>
+<td> <b>Respon Not Found</b> </td>
+<td>
+
+``` json
+{
+    "code" : 404,
+    "message" : "NID Dosen tidak ditemukan",
+    "data" : {
+        "value" : 0010203,
+        "property" : "nid",
+        "location" : "body"
+    } 
+}    
+```
+
+</td>
+</tr>
+</table>
+
+### Delete Dosen
+<table>
+<tr>
+    <td> <b>URL</b> </td>
+    <td> {{baseURL}}/api/v1/dosen </td>
+</tr>
+<tr>
+    <td> <b>Example</b> </td>
+    <td> {{baseURL}}/api/v1/dosen?nid=0010201 </td>
+</tr>
+<tr>
+    <td> <b>Method</b> </td>
+    <td> DELETE </td>
+</tr>
+<tr>
+    <td> <b>Header</b> </td>
+    <td> Authorization : Bearer Token  </td>
+</tr>
+<tr>
+<td> <b>Query</b> </td>
+<td> nid=0010201 </td>
+</tr>
+<tr>
+<td> <b>Respon Success</b> </td>
+<td>
+
+``` json
+{
+    "code" : 200,
+    "message" : "Sukses dihapus",
+    "data" : {
+        "nid" : 0010201,
+        "nama" : "Uus Firdaus",
+        "alamat" : "Gadog",
+        "mapel" : "Basisdata, Struktur Data",
+        "kelas" : "Pagi, Sore"
+    } 
+}    
+```
+
+</td>
+</tr>
+<tr>
+<td> <b>Respon Not Found</b> </td>
+<td>
+
+``` json
+{
+    "code" : 404,
+    "message" : "NID Dosen tidak ditemukan",
+    "data" : {
+        "value" : 0010201,
+        "property" : "nid",
+        "location" : "query"
+    } 
+}    
+```
+
+</td>
+</tr>
+</table>
+</details>
